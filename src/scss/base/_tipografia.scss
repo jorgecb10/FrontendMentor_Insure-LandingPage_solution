@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+
+h1, h2, h3, h4 {
+    margin: 0;
+    line-height: 1.2;
+    font-family: v.$primaria;
+}
+h1 {
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    line-height: 1.5;
+}
+a {
+    text-decoration: none;
+}

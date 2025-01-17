@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+  <title>Frontend Mentor | Insure landing page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+  <header class="header contenedor"> 
+    <img src="./img/logo.svg" alt="logo-snap" class="header__logo">
+    
+    <img src="./img/icon-hamburger.svg" alt="icono-menu" class="header__icono-menu">
+
+    <div class="header__menu">
+      <div class="header__opciones">  
+          <a href="#" class="header__opciones-op">How we work</a>
+          <a href="#" class="header__opciones-op">Blog</a>
+          <a href="#" class="header__opciones-op">Account</a>
+          <a href="#" class="header__opciones-opvp">View Plans</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="principal">
+    <div class="principal__pattern-right">
+      <picture>
+        <source 
+          media="(min-width: 768px)"
+          srcset="./img/bg-pattern-intro-right-desktop.svg" 
+          type="image/jpeg">
+        <img loading="lazy" decoding="async" src="./img/bg-pattern-intro-right-mobile.svg" alt="bgpattern-intro-right">
+      </picture>
+    </div>
+
+    <div class="principal__contenido">
+      <div class="principal__hero">
+        <picture class="principal__imagen">
+          <source 
+            media="(min-width: 768px)"
+            srcset="./img/image-intro-desktop.jpg" 
+            type="image/jpeg">
+          <img loading="lazy" decoding="async" src="./img/image-intro-mobile.jpg" lazyalt="imagen">
+        </picture>
+      </div>
+
+      <div class="principal__info">
+        <picture class="principal__pattern-left">
+          <source 
+            media="(min-width: 768px)"
+            srcset="./img/bg-pattern-intro-left-desktop.svg" 
+            type="image/jpeg">
+          <img loading="lazy" decoding="async" src="./img/bg-pattern-intro-left-mobile.svg" alt="bgpattern-intro-right">
+        </picture>
+
+        <div class="principal__descp">
+          <h1 class="principal__heading">Humanizing your insurance.</h1>
+          <p class="principal__texto">
+            Get your life insurance coverage easier and faster. We blend our expertise 
+            and technology to help you find the plan that’s right for you. Ensure you 
+            and your loved ones are protected.
+          </p>
+          <a href="#" class="principal__btn">View plans</a>
+        </div>
+      </div>
+    </div>
+  </main> 
+
+  <section class="crts">
+    <div class="contenedor">
+      <div class="crts__contenido">
+        <h2 class="crts__heading">We’re different</h2>
+      </div>
+  
+      <div class="cuadros">
+        <div class="cuadros__cuadro">
+          <img src="./img/icon-snappy-process.svg" alt="icon-snappy-process" class="cuadros_cuadro-imagen">
+          <h3 class="cuadros__cuadro-heading">Snappy Process</h3> 
+          <p class="cuadros__cuadro-texto">
+            Our application process can be completed in minutes, not hours. Don’t get 
+            stuck filling in tedious forms.
+          </p>
+        </div>
+  
+        <div class="cuadros__cuadro">
+          <img src="./img/icon-affordable-prices.svg" alt="icon-affordable-prices" class="cuadros_cuadro-imagen">
+          <h3 class="cuadros__cuadro-heading">Affordable Prices</h3> 
+          <p class="cuadros__cuadro-texto">
+            We don’t want you worrying about high monthly costs. Our prices may be low, 
+            but we still offer the best coverage possible.
+          </p>
+        </div>
+  
+        <div class="cuadros__cuadro">
+          <img src="./img/icon-people-first.svg" alt="icon-people-first" class="cuadros_cuadro-imagen">
+          <h3 class="cuadros__cuadro-heading">People First</h3> 
+          <p class="cuadros__cuadro-texto">
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+            sure you’re covered when you need it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work">
+    <div class="work__contenido contenedor">
+      <picture class="work__bg-pattern">
+        <source 
+          media="(min-width: 768px)"
+          srcset="./img/bg-pattern-how-we-work-desktop.svg" 
+          type="image/jpeg">
+        <img loading="lazy" decoding="async" src="./img/bg-pattern-how-we-work-mobile.svg" alt="bgpattern-how-we-work">
+      </picture>
+
+      <div class="work__texto">
+        <h2 class="work__heading">
+          Find out more 
+          <span>
+            about how we work
+          </span> 
+        </h2>
+        <a href="#" class="work__enlace">How we work</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <picture class="footer__bg-pattern">
+      <source 
+        media="(min-width: 768px)"
+        srcset="./img/bg-pattern-footer-desktop.svg" 
+        type="image/jpeg">
+      <img loading="lazy" decoding="async" src="./img/bg-pattern-footer-mobile.svg" alt="bgpattern-footer">
+    </picture>
+
+    <div class="footer__contenido contenedor">
+      <div class="footer__header">
+        <img src="./img/logo.svg" alt="logo-snap" class="footer__logo">
+
+        <div class="redes">
+          <a href="#" class="redes__enlace">
+            <img src="./img/icon-facebook.svg" alt="icono-facebook"> 
+          </a>
+          <a href="#" class="redes__enlace">
+            <img src="./img/icon-twitter.svg" alt="icono-facebook"> 
+          </a>
+          <a href="#" class="redes__enlace">
+            <img src="./img/icon-pinterest.svg" alt="icono-facebook"> 
+          </a>
+          <a href="#" class="redes__enlace">
+            <img src="./img/icon-instagram.svg" alt="icono-facebook"> 
+          </a>
+        </div>
+      </div>
+
+      <nav class="navegacion">
+        <div class="bloque">
+          <h4 class="bloque__heading">Our company</h4>
+          <ul class="bloque__links">
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">how we work</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">why insure?</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">view plans</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">reviews</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bloque">
+          <h4 class="bloque__heading">Help me</h4>
+          <ul class="bloque__links">
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">FAQ</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Terms of use</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Privacy policy</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Cookies</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bloque">
+          <h4 class="bloque__heading">Contact</h4>
+          <ul class="bloque__links">
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Sales</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Support</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Live chat</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bloque">
+          <h4 class="bloque__heading">Others</h4>
+          <ul class="bloque__links">
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Careers</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Press</a>
+            </li>
+            <li class="bloque__item">
+              <a href="#" class="bloque__link">Licenses</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="footer__attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__attribution-link">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/jorgecb10" class="footer__attribution-link">Jorge Carranza</a>.
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>

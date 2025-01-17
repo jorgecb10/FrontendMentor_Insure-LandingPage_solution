@@ -1,0 +1,110 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1rem;
+
+    &__logo {
+        z-index: 50;
+    }
+
+    &__icono-menu {
+        z-index: 50;
+        display: block;
+        position: relative;
+
+        @include m.telefono { 
+            display: none;
+        }
+    }
+
+    &__menu {
+        z-index: 40;
+        overflow: hidden;
+        @include m.maxTelefono {     
+            position: absolute;
+            content: '';
+            right: 0;
+            width: 0;
+            top: 5.2rem;
+            bottom: 0;
+            opacity: 0;
+            background-color: v.$veryDarkViolet;
+            background-image: url(../img/bg-pattern-mobile-nav.svg); 
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center bottom;
+            height: 0;
+            transition: width 0.5s ease, opacity 0.5s ease, height 0.5s ease;
+
+            &-visible {
+                width: 100%;
+                height: auto;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__opciones {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        padding-block: 4rem;
+        @include m.telefono { 
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        &-op,
+        &-opvp {
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+            font-family: v.$secundaria;
+            font-weight: 700;
+        }
+
+        &-op {
+            color: v.$VeryLightGray;
+            transition: color .2s ease-in-out;
+            
+            @include m.telefono { 
+                color: v.$DarkGrayishViolet;
+            }
+
+            &:hover {
+                color: v.$DarkViolet;
+            }
+        }
+
+        &-opvp {
+            width: 100%;
+            text-align: center;
+            color: v.$VeryLightGray;
+            padding: 1rem;
+            border-inline: 1px solid v.$VeryLightGray;
+            border-top: 1px solid v.$VeryLightGray;
+            border-bottom: 2px solid v.$DarkGrayishViolet;
+            transition: color .2s ease-in-out, background-color .2s ease-in-out;
+
+            @include m.telefono { 
+                color: v.$veryDarkViolet;
+                width: auto;
+                border: 2px solid v.$veryDarkViolet;
+                padding: .7rem 2rem;
+
+                &:hover {
+                    color: v.$VeryLightGray;
+                    background-color: v.$veryDarkViolet;
+                }
+            }
+        }
+    }
+} 
