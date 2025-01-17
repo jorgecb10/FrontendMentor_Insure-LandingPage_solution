@@ -526,23 +526,25 @@ a {
   .principal__info {
     position: unset;
     background-color: unset;
-    padding: 3rem 0 0 0;
+    padding: 0;
     text-align: left;
     grid-row: 1/2;
   }
 }
+.principal__descp {
+  z-index: 10;
+  position: relative;
+  padding-top: 5rem;
+}
 @media (min-width: 768px) {
-  .principal__info::before {
+  .principal__descp::before {
     content: "";
     position: absolute;
-    width: 10rem;
+    width: 13rem;
     height: 0.2rem;
     background-color: hsl(276, 4%, 51%);
     top: 0;
   }
-}
-.principal__descp {
-  z-index: 10;
 }
 .principal__heading {
   font-size: 4rem;

@@ -59,25 +59,29 @@
         @include m.tablet {  
             position: unset;
             background-color: unset;
-            padding: 3rem 0 0 0;
+            padding: 0;
             text-align: left;
             grid-row: 1 / 2;
-        }
+        } 
+
+        
+    }
+
+    &__descp {
+        z-index: 10;
+        position: relative;
+        padding-top: 5rem;
 
         &::before {
             @include m.tablet { 
                 content: '';
                 position: absolute;
-                width: 10rem;
+                width: 13rem;
                 height: .2rem;
                 background-color: v.$DarkGrayishViolet;
                 top: 0;
             }
         }
-    }
-
-    &__descp {
-        z-index: 10;
     }
 
     &__heading {
